@@ -1,6 +1,6 @@
 <template>
 
-  <!-- http://localhost:8080/changeavailability -->
+  
 
   <div id="app">
     <change-availabity v-if="$route.path === '/changeavailability'"></change-availabity>
