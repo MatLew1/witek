@@ -1,0 +1,9 @@
+<FilesMatch ".(jpg|jpeg|png|gif|js|css)$">
+Header set Cache-Control "max-age=3600, public"
+</FilesMatch>
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
