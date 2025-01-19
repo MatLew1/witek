@@ -1,8 +1,8 @@
 <template>
 
-  
 
   <div id="app">
+  <h2>lol</h2>
     <change-availabity v-if="$route.path === '/changeavailability'"></change-availabity>
     <the-nav id="top" class="nav" v-if="$route.path !== '/changeavailability'"></the-nav>
     <div class="hero-img" v-if="$route.path !== '/changeavailability'">
